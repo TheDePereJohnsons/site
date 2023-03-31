@@ -9,6 +9,7 @@ public class ConfigureSsg : IHostingStartup
     public void Configure(IWebHostBuilder builder) => builder
         .ConfigureServices(services =>
         {
+        
             services.AddSingleton<RazorPagesEngine>();
             services.AddSingleton<MarkdownPages>();
             services.AddSingleton<MarkdownWhatsNew>();
