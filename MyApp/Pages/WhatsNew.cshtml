@@ -2,7 +2,7 @@
 @attribute [RenderStatic]
 @inject MarkdownWhatsNew WhatsNew
 @{
-    ViewData["Title"] = "What's New";
+    ViewData["Title"] = "What is New";
 
     var releases = WhatsNew.Features.Keys.OrderByDescending(x => x).ToList();
 }
